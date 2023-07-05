@@ -14,15 +14,15 @@ beforeEach(() => {
 
 test('sample test name', async () => {
 	dbConnectionMock
-		.mockReturnValue(Promise.reject('retry herpderp please'))
-		.mockReturnValue(Promise.reject('retry derpherp please'))
-		.mockReturnValue(Promise.reject('retry derpderp please'))
-		.mockReturnValue(
-			Promise.resolve([
+		.mockRejectedValue('retry herpderp please')
+		.mockRejectedValue('retry derpherp please')
+		.mockRejectedValue('retry derpderp please')
+		.mockResolvedValue(
+			[
 				{
 					job_execution_id: 556
 				}
-			])
+			]
 		);
 	const result = getLoadCycleId('42', undefined);
 	await expect(result).resolves.toEqual(556);

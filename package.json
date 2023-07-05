@@ -1,0 +1,27 @@
+{
+	"scripts": {
+		"test": "vitest run"
+	},
+	"type": "module",
+	"packageManager": "yarn@3.6.1",
+	"devDependencies": {
+		"@sapphire/eslint-config": "^4.4.3",
+		"@sapphire/prettier-config": "^1.4.5",
+		"@sapphire/ts-config": "^4.0.0",
+		"@types/node": "^20.3.3",
+		"@typescript-eslint/eslint-plugin": "^5.61.0",
+		"@typescript-eslint/parser": "^5.61.0",
+		"eslint": "^8.44.0",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"prettier": "^3.0.0",
+		"typescript": "^5.1.6",
+		"vitest": "^0.32.4"
+	},
+	"eslintConfig": {
+		"extends": [
+			"@sapphire"
+		]
+	},
+	"prettier": "@sapphire/prettier-config"
+}

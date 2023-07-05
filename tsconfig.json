@@ -1,0 +1,9 @@
+{
+	"extends": "@sapphire/ts-config/extra-strict",
+	"compilerOptions": {
+		"types": ["vitest/globals"],
+		"module": "Node16",
+		"moduleResolution": "node16"
+	},
+	"include": ["src", "tests", "vitest.config.ts", "vitest.setup.ts"]
+}
